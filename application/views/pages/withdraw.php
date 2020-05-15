@@ -29,7 +29,7 @@
             <div class="alert-body">
             <div class="alert-title">
               All withdrawals are subject to 5% processing fee.<br>
-							Cut off time for withdrawal request: 11:59 AM
+							Withdrawal Request Cut off time 7:00 p.m (GMT -6)
             </div>
             </div>
           </div>

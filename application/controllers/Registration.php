@@ -29,6 +29,8 @@ class Registration extends CI_Controller{
         }
 
         $this->form_validation->set_rules('fullname', 'Full Name', 'required');
+        $this->form_validation->set_rules('country', 'Country', 'required');
+        $this->form_validation->set_rules('birthday', 'Birthay', 'required');
         $this->form_validation->set_rules('username', 'Username', 'required|callback_is_new_username');
         $this->form_validation->set_rules('email', 'Email', 'required|valid_email|callback_is_new_email');
         $this->form_validation->set_rules('confirm_email', 'Email Confirmation', 'required|matches[email]');
@@ -62,7 +64,9 @@ class Registration extends CI_Controller{
                       'referral_code_id' => $refcode->id,
                       'date' => date('Y-m-d H:i:s'),
                       'password' => $password,
-                      'account_type_id' => '2'
+                      'account_type_id' => '2',
+                      'caountry' => '$_POST['country']',
+                      'birthday' => '$_POST['birthday']'
                   );
 
 
@@ -89,7 +93,7 @@ class Registration extends CI_Controller{
 
                       unset($_POST);
 
-                      redirect('login','refresh');
+                      redirect('registration','refresh');
 
                   }else{
                       // echo "failed";
@@ -98,6 +102,26 @@ class Registration extends CI_Controller{
                       $this->load->view('login/footer');
                   }
       		}
+    }
+
+    function send_reset_email($email, $password){
+
+        ini_set( 'display_errors', 1 );
+        error_reporting( E_ALL );
+				$data['email'] = $email;
+
+				$this->load->library('email');
+
+        $this->email->from('energyfuelsmainoffice@gmail.com', 'EnergyFuels-Affiliate')
+            ->to($data['email'])
+            ->subject('Update Password')
+						->message('Your temporary password is: '.$password);
+
+        if($this->email->send()){
+					return true;
+				}else{
+					return false;
+				}
     }
 
     function is_new_email(){

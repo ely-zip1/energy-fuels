@@ -24,7 +24,7 @@
               <div class="col-12">
                 <?php if(isset($_SESSION['success'])){
                   echo '<div class="alert alert-success">
-                        Registration successful. Proceed to <a href="'.base_url('login').'">LOGIN</a>.
+                        To activate your account, follow the instructions sent to your email.
                       </div>';
                  }?>
               </div>

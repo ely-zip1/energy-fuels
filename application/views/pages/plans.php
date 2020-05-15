@@ -9,102 +9,130 @@
       <div class="row ">
         <?php $this->load->view('templates/user_info'); ?>
       </div>
-
-      <div class="row account-summary-row ">
-        <div class="col-sm-4 account-summary-1">
-          <div class="left">
-            <img src="<?php echo base_url('assets/img/planactivebgside-min.png');?>" alt="">
-            <div class="icon-container">
-              <img src="<?php echo base_url('assets/img/plan1-min.png');?>" alt="">
+			<br>
+			<div class="row">
+				<div class="col-12 col-md-4 col-lg-4 text-white">
+							<div class="pricing" style="background:#4B80D0;">
+								<div class="pricing-title text-white" style="background:#7DACFE; font-size: 15px;">
+                    Copper Plan
+                  </div>
+                  <div class="pricing-padding">
+                    <div class="pricing-price">
+                      <div>$60</div>
+                      <div> <strong>Up to $999</strong></div>
+                    </div>
+                    <div class="pricing-details">
+											<div class="pricing-item">
+                        <div><i class="fas fa-calendar-check" style="font-size: 10px; padding: 0px 1px; color: white; border: 6px solid #FFB319; background:#FFB319; border-radius: 50%;"></i></div>
+                        <div class="pricing-item-label"> &nbsp; 100 Days</div>
+                      </div>
+                      <div class="pricing-item">
+                        <!-- <div class="pricing-item-icon"><i class="fas fa-check"></i></div> -->
+                        <div class="pricing-item-label"><strong>AFFILIATE BONUS</strong></div>
+                      </div>
+                      <div class="pricing-item">
+                        <div><i class="fas fa-check" style="font-size: 10px; color: white; border: 6px solid #FFB319; background:#FFB319; border-radius: 50%;"></i></div>
+                        <div class="pricing-item-label"> &nbsp; 1st Level - 5%</div>
+                      </div>
+                      <div class="pricing-item">
+                        <div><i class="fas fa-check" style="font-size: 10px; color: white; border: 6px solid #FFB319; background:#FFB319; border-radius: 50%;"></i></div>
+                        <div class="pricing-item-label"> &nbsp; 2nd Level - 1%</div>
+                      </div>
+                      <div class="pricing-item">
+                        <div><i class="fas fa-check" style="font-size: 10px; color: white; border: 6px solid #FFB319; background:#FFB319; border-radius: 50%;"></i></div>
+                        <div class="pricing-item-label"> &nbsp; 3rd Level - 1%</div>
+                      </div>
+											<div>
+												<h5 style="padding: 5px 10px; color: white; border: 6px solid #7DACFE; background:#7DACFE; border-radius: 30px;">
+													1.2% DAILY
+												</h5>
+											</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-4 text-white">
+								<!-- <div class="pricing pricing-highlight"> -->
+                <div class="pricing" style="background:#4F56C0;">
+                  <div class="pricing-title text-white" style="background:#878EF8; font-size: 15px;">
+                    Vanadium Plan
+                  </div>
+                  <div class="pricing-padding">
+                    <div class="pricing-price">
+											<div>$1,000</div>
+                      <div> <strong>Up to $5,999</strong></div>
+                    </div>
+										<div class="pricing-details">
+											<div class="pricing-item">
+                        <div><i class="fas fa-calendar-check" style="font-size: 10px; padding: 0px 1px; color: white; border: 6px solid #FFB319; background:#FFB319; border-radius: 50%;"></i></div>
+                        <div class="pricing-item-label"> &nbsp; 100 Days</div>
+                      </div>
+                      <div class="pricing-item">
+                        <!-- <div class="pricing-item-icon"><i class="fas fa-check"></i></div> -->
+                        <div class="pricing-item-label"><strong>AFFILIATE BONUS</strong></div>
+                      </div>
+                      <div class="pricing-item">
+                        <div><i class="fas fa-check" style="font-size: 10px; color: white; border: 6px solid #FFB319; background:#FFB319; border-radius: 50%;"></i></div>
+                        <div class="pricing-item-label"> &nbsp; 1st Level - 5%</div>
+                      </div>
+                      <div class="pricing-item">
+                        <div><i class="fas fa-check" style="font-size: 10px; color: white; border: 6px solid #FFB319; background:#FFB319; border-radius: 50%;"></i></div>
+                        <div class="pricing-item-label"> &nbsp; 2nd Level - 1%</div>
+                      </div>
+                      <div class="pricing-item">
+                        <div><i class="fas fa-check" style="font-size: 10px; color: white; border: 6px solid #FFB319; background:#FFB319; border-radius: 50%;"></i></div>
+                        <div class="pricing-item-label"> &nbsp; 3rd Level - 1%</div>
+                      </div>
+											<div>
+												<h5 style="padding: 5px 10px; color: white; border: 6px solid #878EF8; background:#878EF8; border-radius: 30px;">
+													2% DAILY
+												</h5>
+											</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-4 text-white">
+							<div class="pricing" style="background:#1D8FE5;">
+								<div class="pricing-title text-white" style="background:#51D7FC; font-size: 15px;">
+                    Uranium Plan
+                  </div>
+                  <div class="pricing-padding">
+                    <div class="pricing-price">
+											<div>$6,000</div>
+                      <div> <strong>Up to $9,999</strong></div>
+                    </div>
+										<div class="pricing-details">
+											<div class="pricing-item">
+                        <div><i class="fas fa-calendar-check" style="font-size: 10px; padding: 0px 1px; color: white; border: 6px solid #FFB319; background:#FFB319; border-radius: 50%;"></i></div>
+                        <div class="pricing-item-label"> &nbsp; 100 Days</div>
+                      </div>
+                      <div class="pricing-item">
+                        <!-- <div class="pricing-item-icon"><i class="fas fa-check"></i></div> -->
+                        <div class="pricing-item-label"><strong>AFFILIATE BONUS</strong></div>
+                      </div>
+                      <div class="pricing-item">
+                        <div><i class="fas fa-check" style="font-size: 10px; color: white; border: 6px solid #FFB319; background:#FFB319; border-radius: 50%;"></i></div>
+                        <div class="pricing-item-label"> &nbsp; 1st Level - 5%</div>
+                      </div>
+                      <div class="pricing-item">
+                        <div><i class="fas fa-check" style="font-size: 10px; color: white; border: 6px solid #FFB319; background:#FFB319; border-radius: 50%;"></i></div>
+                        <div class="pricing-item-label"> &nbsp; 2nd Level - 1%</div>
+                      </div>
+                      <div class="pricing-item">
+                        <div><i class="fas fa-check" style="font-size: 10px; color: white; border: 6px solid #FFB319; background:#FFB319; border-radius: 50%;"></i></div>
+                        <div class="pricing-item-label"> &nbsp; 3rd Level - 1%</div>
+                      </div>
+											<div>
+												<h5 style="padding: 5px 10px; color: white; border: 6px solid #51D7FC; background:#51D7FC; border-radius: 30px;">
+													2.5% DAILY
+												</h5>
+											</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="right">
-            <div class="top">
-              <h1>$80.00</h1>
-							<h6>Up to $799.00</h6>
-            </div>
-            <div class="bottom1 plan-card">
-							<h4><?php echo $plan1; ?></h4>
-							<!-- <h4>ULTRAMAX PLAN</h4> -->
-							<p class="plan-card-info">
-								<b>120 Days</b> Contract
-								<br>
-								Sponsor Bonus
-								<br>
-								<b>1st level - 5%</b>
-								<br>
-								<b>2nd level - 3%</b>
-								<br>
-								<b>3rd level - 2%</b>
-							</p>
-
-							<h1 class="interest-info text-center"> 1% DAILY</h1>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4 account-summary-1">
-          <div class="left">
-            <img src="<?php echo base_url('assets/img/planactivebgside-min.png');?>" alt="">
-            <div class="icon-container">
-              <img src="<?php echo base_url('assets/img/plan7-min.png');?>" alt="">
-            </div>
-          </div>
-          <div class="right">
-            <div class="top">
-              <h1>$800.00</h1>
-							<h6>Up to 3,999.00</h6>
-            </div>
-            <div class="bottom2 plan-card">
-							<h4><?php echo $plan2; ?></h4>
-							<p class="plan-card-info">
-								<b>90 Days</b> Contract
-								<br>
-								Sponsor Bonus
-								<br>
-								<b>1st level - 5%</b>
-								<br>
-								<b>2nd level - 3%</b>
-								<br>
-								<b>3rd level - 2%</b>
-							</p>
-
-							<h1 class="interest-info text-center"> 1.5% DAILY</h1>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm-4 account-summary-1">
-          <div class="left">
-            <img src="<?php echo base_url('assets/img/planactivebgside-min.png');?>" alt="">
-            <div class="icon-container">
-              <img src="<?php echo base_url('assets/img/plan9-min.png');?>" alt="">
-            </div>
-          </div>
-          <div class="right">
-            <div class="top">
-              <h1>$4,000.00</h1>
-							<h6>Up to 8,000.00</h6>
-            </div>
-            <div class="bottom3 plan-card">
-							<h4><?php echo $plan3; ?></h4>
-							<p class="plan-card-info">
-								<b>60 Days</b> Contract
-								<br>
-								Sponsor Bonus
-								<br>
-								<b>1st level - 5%</b>
-								<br>
-								<b>2nd level - 3%</b>
-								<br>
-								<b>3rd level - 2%</b>
-							</p>
-
-							<h1 class="interest-info text-center"> 2% DAILY</h1>
-            </div>
-          </div>
-        </div>
-      </div>
 
 			<div class="row deposit-row">
         <div class="col-12">

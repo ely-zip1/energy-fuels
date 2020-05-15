@@ -162,7 +162,7 @@ class Withdraw extends CI_Controller
 
         $account_balance = ($total_growth + $total_bonus + $total_received) - $total_withdrawn - $total_reinvestment->amount - $total_sent;
 
-    if(($pending_amount + $_POST['withdraw_amount']) > $account_balance){
+    if(($pending_withdrawal->total + $_POST['withdraw_amount']) > $account_balance){
       $this->form_validation->set_message('has_pending', 'Pending withdrawal will be more than account balance.');
       return false;
     }else{

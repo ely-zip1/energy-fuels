@@ -12,7 +12,7 @@ class Login  extends CI_Controller
 
 	public function index()
 	{
-		 // for($i = 0; $i < 1000; $i++){
+		 // for($i = 1; $i < 1000; $i++){
 		 // 	$this->Referral_codes->add_code(random_string('alnum', 6));
 		 // }
 

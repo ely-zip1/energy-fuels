@@ -7,6 +7,8 @@ class Forgot_password  extends CI_Controller
         {
             parent::__construct();
             $this->load->model('Members');
+            $this->load->helper('url');
+            $this->load->config('email');
         }
 
 	public function index()
@@ -45,23 +47,37 @@ class Forgot_password  extends CI_Controller
     }
 
     function send_reset_email($email, $password){
-        
+
         ini_set( 'display_errors', 1 );
         error_reporting( E_ALL );
-        $from = "support@office-goldenocean.com";
+        // $from = "energyfuelmainoffice@gmail.com";
+				//
+        // //$to = "elisha.lapiz@gmail.com";
+        // $to = $email;
+        // $subject = "Password Reset";
+        // $message = "Your temporary password is: $password .";
+        // $headers = "From:" . $from;
+				//
+				//
+        // if(mail($to,$subject,$message, $headers)){
+        //     return true;
+        // }else{
+        //     return false;
+        // }
+				$data['email'] = $email;
 
-        //$to = "elisha.lapiz@gmail.com";
-        $to = $email;
-        $subject = "Password Reset";
-        $message = "Your temporary password is: $password .";
-        $headers = "From:" . $from;
+				$this->load->library('email');
 
+        $this->email->from('energyfuelsmainoffice@gmail.com', 'EnergyFuels-Affiliate')
+            ->to($data['email'])
+            ->subject('Update Password')
+						->message('Your temporary password is: '.$password);
 
-        if(mail($to,$subject,$message, $headers)){
-            return true;
-        }else{
-            return false;
-        }
+        if($this->email->send()){
+					return true;
+				}else{
+					return false;
+				}
     }
 
     function is_email_valid($email){

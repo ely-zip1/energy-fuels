@@ -94,7 +94,7 @@
             <div class="card-body">
               <h5 class="card-title">Referral Link</h5>
 											<div class="alert alert-light">
-												<a class="affiliate-alert" id="referral-link" href="https://office-goldenocean.com/my/ref/<?php echo $referral_code; ?>">
+												<a class="affiliate-alert" id="referral-link" href="my/ref/<?php echo $referral_code; ?>">
 													<input type="text" value="energyfuel-affiliate.com/my/ref/<?php echo $referral_code; ?>" readonly id="link" class="span12"
 													style="width:100%;
 														text-align: center;
