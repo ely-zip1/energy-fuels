@@ -121,7 +121,7 @@ class Registration extends CI_Controller{
         $this->email->from('energyfuelsmainoffice@gmail.com', 'EnergyFuels-Affiliate')
             ->to($data['email'])
             ->subject('Email Verification')
-						->message('Please click the link to verify your account. http://energyfuels-affiliate.com/verify/'.$verification_code);
+						->message('Please click the link to verify your account. https://energyfuels-affiliate.com/verify/'.$verification_code);
 
         if($this->email->send()){
 					return true;
