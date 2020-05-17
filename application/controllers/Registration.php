@@ -57,6 +57,8 @@ class Registration extends CI_Controller{
                     ];
                   $password = password_hash($_POST['password'], PASSWORD_BCRYPT, $options);
 
+                  $verification_code = random_string('alnum', 7);
+
                   $user_data = array(
                       'full_name' => $_POST['fullname'],
                       'username' => $_POST['username'],
@@ -65,8 +67,10 @@ class Registration extends CI_Controller{
                       'date' => date('Y-m-d H:i:s'),
                       'password' => $password,
                       'account_type_id' => '2',
-                      'caountry' => '$_POST['country']',
-                      'birthday' => '$_POST['birthday']'
+                      'country' => $_POST['country'],
+                      'birthdate' => $_POST['birthday'],
+                      'verified' => '0',
+                      'verification_code' => $verification_code
                   );
 
 
@@ -89,6 +93,8 @@ class Registration extends CI_Controller{
 
                       $this->ReferralModel->add_referral($new_referral);
 
+                      $this->send_verification_email($_POST['email'], $verification_code);
+
                       $this->session->set_flashdata("success","yeey");
 
                       unset($_POST);
@@ -104,7 +110,7 @@ class Registration extends CI_Controller{
       		}
     }
 
-    function send_reset_email($email, $password){
+    function send_verification_email($email, $verification_code){
 
         ini_set( 'display_errors', 1 );
         error_reporting( E_ALL );
@@ -114,8 +120,8 @@ class Registration extends CI_Controller{
 
         $this->email->from('energyfuelsmainoffice@gmail.com', 'EnergyFuels-Affiliate')
             ->to($data['email'])
-            ->subject('Update Password')
-						->message('Your temporary password is: '.$password);
+            ->subject('Email Verification')
+						->message('Please click the link below to verify your account.\n http://energyfuels-affiliate.com/verify/'.$verification_code);
 
         if($this->email->send()){
 					return true;

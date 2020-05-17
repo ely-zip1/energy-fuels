@@ -135,6 +135,29 @@
           $this->db->where('id', $member_id);
           $this->db->update('td_members', $data);
         }
+
+        public function update_verification_code($verification_code, $member_id){
+          $this->db->set('verification_code', $verification_code);
+          $this->db->where('id', $member_id);
+          $this->db->update('td_members');
+        }
+
+        public function verified($code){
+          $this->db->set('verified', 1);
+          $this->db->where('verification_code', $code);
+          $this->db->update('td_members');
+        }
+
+        public function is_valid_v_code($verification_code){
+          $this->db->where('verification_code',$verification_code);
+          $query = $this->db->get('td_members',1);
+
+          if($query->row() != null){
+            return true;
+          }else{
+            return false;
+          }
+        }
     }
 
 
