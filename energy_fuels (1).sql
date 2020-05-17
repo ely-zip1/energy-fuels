@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 17, 2020 at 08:46 AM
+-- Generation Time: May 17, 2020 at 10:45 AM
 -- Server version: 10.4.10-MariaDB
 -- PHP Version: 7.3.12
 
@@ -173,7 +173,7 @@ CREATE TABLE `td_members` (
   `contact_number` varchar(11) NOT NULL,
   `image_name` varchar(255) NOT NULL,
   `image_orientation` varchar(255) NOT NULL,
-  `birthdate` date NOT NULL DEFAULT current_timestamp(),
+  `birthdate` date DEFAULT NULL,
   `country` varchar(200) NOT NULL,
   `verified` tinyint(1) NOT NULL,
   `verification_code` varchar(10) NOT NULL
