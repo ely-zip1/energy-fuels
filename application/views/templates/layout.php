@@ -12,7 +12,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
         </form>
         <div class="mr-auto"></div>
         <div class="navbar-nav navbar-right">
-          <a href="<?php echo base_url(); ?>" class="btn btn-icon icon-left rounded-button header-button-1"><i class="fas fa-user"></i> DASHBOARD</a>
+          <a href="<?php echo base_url(); ?>" class="btn btn-icon icon-left rounded-button header-button-1"><i class="fas fa-user"></i> CASH FLOW</a>
           <span class="nav-spacer"> </span>
           <a href="<?php echo base_url('logout'); ?>" class="btn btn-icon icon-left rounded-button header-button-2"><i class="fas fa-sign-out-alt"></i> LOGOUT</a>
         </div>
