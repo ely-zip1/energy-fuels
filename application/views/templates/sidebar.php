@@ -12,19 +12,19 @@ defined('BASEPATH') or exit('No direct script access allowed');
 		<ul class="sidebar-menu">
 			<!-- <li class="menu-header">Dashboard</li> -->
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'dashboard' ? 'active' : ''; ?>"> <a
-					href="<?= base_url();?>dashboard" class="nav-link"><i class="fas fa-home"></i><span>Dashboard</span></a>
+					href="<?= base_url();?>dashboard" class="nav-link"><i class="fas fa-home"></i><span>Cash Flow</span></a>
 			</li>
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'plans' ? 'active' : ''; ?>"> <a
-					href="<?= base_url();?>plans" class="nav-link"><i class="fas fa-piggy-bank"></i><span>Make Deposit</span></a>
+					href="<?= base_url();?>plans" class="nav-link"><i class="fas fa-piggy-bank"></i><span>Purchase Package</span></a>
 			</li>
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'account_settings' ? 'active' : ''; ?>"> <a
-					href="<?= base_url();?>account_settings" class="nav-link"><i class="fas fa-edit"></i><span>Edit Account</span></a>
+					href="<?= base_url();?>account_settings" class="nav-link"><i class="fas fa-edit"></i><span>Personalize My Account</span></a>
 			</li>
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'your_deposits' ? 'active' : ''; ?>"> <a
-					href="<?= base_url();?>your_deposits" class="nav-link"><i class="fas fa-dollar-sign"></i><span>Your Deposits</span></a>
+					href="<?= base_url();?>your_deposits" class="nav-link"><i class="fas fa-dollar-sign"></i><span>Transaction History</span></a>
 			</li>
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'withdraw' ? 'active' : ''; ?>"> <a
-					href="<?= base_url();?>withdraw" class="nav-link"><i class="fas fa-money-check-alt"></i><span>Withdraw</span></a>
+					href="<?= base_url();?>withdraw" class="nav-link"><i class="fas fa-money-check-alt"></i><span>Withdraw Available Funds</span></a>
 			</li>
 			<!-- <li class="dropdown <?php echo $this->uri->segment(1) == 'earning_history' ? 'active' : ''; ?>"> <a
 					href="earning_history" class="nav-link"><i class="fas fa-money-bill-wave-alt"></i><span>Earning History</span></a>
@@ -37,10 +37,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
 			<!-- </li> -->
 
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'your_referrals' ? 'active' : ''; ?>"> <a
-					href="<?= base_url();?>your_referrals" class="nav-link"><i class="fas fa-comments-dollar"></i><span>Your Referrals</span></a>
+					href="<?= base_url();?>your_referrals" class="nav-link"><i class="fas fa-comments-dollar"></i><span>My Affiliates</span></a>
 			</li>
 			<li class="dropdown <?php echo $this->uri->segment(1) == 'fund_transfer' ? 'active' : ''; ?>"> <a
-					href="<?= base_url();?>fund_transfer" class="nav-link"><i class="fas fa-exchange-alt"></i><span>Fund Transfer</span></a>
+					href="<?= base_url();?>fund_transfer" class="nav-link"><i class="fas fa-exchange-alt"></i><span>Peer to Peer Transfer</span></a>
 			</li>
 		</ul>
 	</aside>
