@@ -35,17 +35,17 @@
                   <th>Send Payment to:</th>
                 <?php
                   if(isset($deposit_payment_mode)){
-                    if($deposit_payment_mode == 'BITCOIN'){
+                    if($deposit_payment_mode == 'Bitcoin'){
                       echo '<td>
                         <img src=" '.base_url('assets/img/qr_bitcoin.jpg').'" alt="bitcoin" width="150px">
                         '. $deposit_address.'
                       </td>';
-                    }else if($deposit_payment_mode == 'ABRA'){
+                    }else if($deposit_payment_mode == 'Abra'){
                       echo '<td>
                         <img src=" '.base_url('assets/img/qr_abra.jpg').'" alt="bitcoin" width="150px">
                         '. $deposit_address.'
                       </td>';
-                    }else if($deposit_payment_mode == 'MASTERCARD'){
+                    }else if($deposit_payment_mode == 'Mastercard'){
                       echo '<td>
                         <a href="https://btcxe.com">'. $deposit_address.'</a>
                       </td>';
