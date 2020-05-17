@@ -45,6 +45,10 @@
                         <img src=" '.base_url('assets/img/qr_abra.jpg').'" alt="bitcoin" width="150px">
                         '. $deposit_address.'
                       </td>';
+                    }else if($deposit_payment_mode == 'MASTERCARD'){
+                      echo '<td>
+                        <a href="https://btcxe.com">'. $deposit_address.'</a>
+                      </td>';
                     }else{
                       echo '<td>'. $deposit_address.'</td>';
                     }
