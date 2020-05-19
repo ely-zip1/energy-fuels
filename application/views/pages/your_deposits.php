@@ -26,7 +26,7 @@
             	<h4>ULTRAMAX PLAN</h4>
             </div>
 				    <div class="card-body table-responsive">
-							<table class="table table-hover table-sm">
+							<table class="table table-hover table-striped table-sm">
 								<thead>
 									<tr>
 										<th scope="col">Amount</th>
