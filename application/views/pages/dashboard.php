@@ -107,6 +107,19 @@
 												</button>
 	                    </div>
 
+					              <h5 class="card-title">Referral Link</h5>
+																<div class="alert alert-light">
+																		<input type="text" value="<?php echo $referral_code; ?>" readonly id="link2" class="span12"
+																		style="width:100%;
+																			text-align: center;
+																	    background: transparent;
+																	    border: none;
+																	    cursor: pointer;"/>
+																	<button type="button" class="btn btn-info btn-sm" onclick="copyToClipboard('#link2')">
+																	    Copy
+																	</button>
+						                    </div>
+
             </div>
           </div>
         </div>
