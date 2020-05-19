@@ -171,7 +171,7 @@
 								<option <?php if($selected_mode == 'mode4') {echo 'selected';} ?> value="mode4">Paypal</option>
 								<option <?php if($selected_mode == 'mode5') {echo 'selected';} ?> value="mode5">Mastercard</option>
 								<option <?php if($selected_mode == 'mode6') {echo 'selected';} ?> value="mode6">Skrill</option>
-								<option <?php if($selected_mode == 'mode7') {echo 'selected';} ?> value="mode7">Reinvestment</option>
+								<option <?php if($selected_mode == 'mode7') {echo 'selected';} ?> value="mode7">Available Balance</option>
 							</select>
 							<div class="invalid-feedback">
 										<?php echo form_error('plan_payment_mode');?>
