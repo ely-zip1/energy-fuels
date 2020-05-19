@@ -41,7 +41,7 @@
               <label for="receiver_code">Send to</label>
               <div class="input-group mb-2">
                 <div class="input-group-prepend">
-                  <div class="input-group-text">https://office-goldenocean.com/my/ref/</div>
+                  <div class="input-group-text">https://energyfuels-affiliate.com/my/ref/</div>
                 </div>
                 <input name="receiver_code" type="text" class="form-control <?php if(strlen(form_error('receiver_code')) > 0){echo "is-invalid";} ?>"
                 id="inlineFormInputGroup" placeholder="Code" value="<?php set_value('receiver_code','',true); ?>">
