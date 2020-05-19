@@ -180,7 +180,7 @@
 
             <div class="form-group col-md-4  deposit-form">
 	            <label for="deposit_amount">Amount</label>
-							<div class="input-group mb-2">
+							<div class="input-group">
                 <div class="input-group-prepend">
                   <div class="input-group-text"> $ </div>
                 </div>
