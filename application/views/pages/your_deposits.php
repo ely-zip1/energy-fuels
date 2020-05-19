@@ -23,7 +23,7 @@
         <div class="col-12">
 				  <div class="card bg-primary text-white text-white">
 						<div class="card-header">
-            	<h4>ULTRAMAX PLAN</h4>
+            	<h4>COPPER PLAN</h4>
             </div>
 				    <div class="card-body table-responsive">
 							<table class="table table-hover table-striped table-sm">
@@ -61,7 +61,7 @@
         <div class="col-12">
 				  <div class="card bg-primary text-white text-white">
 						<div class="card-header">
-            	<h4>PANAMAX PLAN</h4>
+            	<h4>VANADIUM PLAN</h4>
             </div>
 				    <div class="card-body table-responsive">
 							<table class="table table-hover table-striped table-sm">
@@ -99,7 +99,7 @@
         <div class="col-12">
 				  <div class="card bg-primary text-white">
 						<div class="card-header">
-            	<h4>CAPESIZE PLAN</h4>
+            	<h4>URANIUM PLAN</h4>
             </div>
 				    <div class="card-body table-responsive">
 							<table class="table table-hover table-striped table-sm">
