@@ -35,6 +35,7 @@
 										<th scope="col">Date Created</th>
 										<th scope="col">Status</th>
 										<th scope="col">Remaining days</th>
+										<th scope="col">Daily Income</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -48,6 +49,7 @@
 											<td><?php echo $row['date']; ?></td>
 											<td><?php echo $row['status']; ?></td>
 											<td><?php echo $row['days_remaining']; ?></td>
+											<td>$ <?php echo $row['daily_income']; ?></td>
 										</tr>
 									<?php }}?>
 								</tbody>
@@ -73,6 +75,7 @@
 										<th scope="col">Date Created</th>
 										<th scope="col">Status</th>
 										<th scope="col">Remaining days</th>
+										<th scope="col">Daily Income</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -86,6 +89,7 @@
 											<td><?php echo $row['date']; ?></td>
 											<td><?php echo $row['status']; ?></td>
 											<td><?php echo $row['days_remaining']; ?></td>
+											<td>$ <?php echo $row['daily_income']; ?></td>
 										</tr>
 									<?php }}?>
 								</tbody>
@@ -111,6 +115,7 @@
 										<th scope="col">Date Created</th>
 										<th scope="col">Status</th>
 										<th scope="col">Remaining days</th>
+										<th scope="col">Daily Income</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -124,6 +129,7 @@
 											<td><?php echo $row['date']; ?></td>
 											<td><?php echo $row['status']; ?></td>
 											<td><?php echo $row['days_remaining']; ?></td>
+											<td>$ <?php echo $row['daily_income']; ?></td>
 										</tr>
 									<?php }}?>
 								</tbody>

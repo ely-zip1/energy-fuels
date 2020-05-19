@@ -38,6 +38,7 @@ class Your_deposits extends CI_Controller
         if($deposit->package_id == 1){
           $ultramax = array();
           $ultramax['amount'] = number_format($deposit->amount, 2, '.', ',');
+          $ultramax['daily_income'] = number_format($deposit->amount / 0.012, 2, '.', ',');
 
           $payment_mode = $this->Deposit_Options->get_by_id($deposit->deposit_options_id);
           $ultramax['mode'] = $payment_mode->name;
@@ -62,6 +63,7 @@ class Your_deposits extends CI_Controller
         else if($deposit->package_id == 2){
           $panamax = array();
           $panamax['amount'] = number_format($deposit->amount, 2, '.', ',');
+          $panamax['daily_income'] = number_format($deposit->amount / 0.02, 2, '.', ',');
 
           $payment_mode = $this->Deposit_Options->get_by_id($deposit->deposit_options_id);
           $panamax['mode'] = $payment_mode->name;
@@ -86,6 +88,7 @@ class Your_deposits extends CI_Controller
         else if($deposit->package_id == 3){
           $capesize = array();
           $capesize['amount'] = number_format($deposit->amount, 2, '.', ',');
+          $capesize['daily_income'] = number_format($deposit->amount / 0.025, 2, '.', ',');
 
           $payment_mode = $this->Deposit_Options->get_by_id($deposit->deposit_options_id);
           $capesize['mode'] = $payment_mode->name;
