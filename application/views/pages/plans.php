@@ -178,18 +178,21 @@
 							</div>
             </div>
 
-            <div class="form-group col-md-4  deposit-form">
-	            <label for="deposit_amount">Amount</label>
-							<div class="input-group">
-                <div class="input-group-prepend">
-                  <div class="input-group-text"> $ </div>
-                </div>
-			          <input type="text" class="deposit-amount form-control <?php if(strlen(form_error('deposit_amount')) > 0){echo "is-invalid";} ?>"
-									name="deposit_amount" id="deposit-amount" placeholder="Amount" value="<?php set_value('deposit_amount','',true); ?>">
-								<div class="invalid-feedback deposit-error">
-									<?php echo form_error('deposit_amount');?>
-								</div>
-            </div>
+
+						<div class="form-row">
+	            <div class="form-group col-md-4  deposit-form">
+		            <label for="deposit_amount">Amount</label>
+								<div class="input-group">
+	                <div class="input-group-prepend">
+	                  <div class="input-group-text"> $ </div>
+	                </div>
+				          <input type="text" class="deposit-amount form-control <?php if(strlen(form_error('deposit_amount')) > 0){echo "is-invalid";} ?>"
+										name="deposit_amount" id="deposit-amount" placeholder="Amount" value="<?php set_value('deposit_amount','',true); ?>">
+									<div class="invalid-feedback deposit-error">
+										<?php echo form_error('deposit_amount');?>
+									</div>
+	            </div>
+						</div>
           </div>
 				</div>
 
