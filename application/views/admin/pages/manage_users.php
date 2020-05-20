@@ -54,7 +54,7 @@
 										<td>$ <?php echo number_format($user['total_deposit'],2); ?></td>
 										<td><?php echo $user['date_joined']; ?></td>
 										<td><?php echo $user['referred_by']; ?></td>
-										<td><?php echo 'https://office-goldenocean.com/my/ref/'.$user['referral_code']; ?></td>
+										<td><?php echo 'https://energyfuels-affiliate.com/my/ref/'.$user['referral_code']; ?></td>
 										<td>
 											<a class="btn btn-success btn-sm"
 												href="<?php echo base_url('user_details/show/'.$user['id']) ?>"> Details </a>
