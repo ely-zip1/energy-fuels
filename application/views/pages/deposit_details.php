@@ -40,9 +40,9 @@
                         <img src=" '.base_url('assets/img/qr_bitcoin.jpg').'" alt="bitcoin" width="150px">
                         '. $deposit_address.'
                       </td>';
-                    }else if($deposit_payment_mode == 'Abra'){
+                    }else if($deposit_payment_mode == 'Etherium'){
                       echo '<td>
-                        <img src=" '.base_url('assets/img/qr_abra.jpg').'" alt="bitcoin" width="150px">
+                        <img src=" '.base_url('assets/img/qr_eth.jpg').'" alt="eth" width="150px">
                         '. $deposit_address.'
                       </td>';
                     }else if($deposit_payment_mode == 'Mastercard'){

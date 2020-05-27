@@ -166,7 +166,7 @@
 							<label for="plan_option">Payment Mode</label>
 							<select class="form-control" name="plan_payment_mode">
 								<option <?php if($selected_mode == 'mode1') {echo 'selected';} ?> value="mode1">Bitcoin</option>
-								<option <?php if($selected_mode == 'mode2') {echo 'selected';} ?> value="mode2">Abra</option>
+								<option <?php if($selected_mode == 'mode2') {echo 'selected';} ?> value="mode2">Etherium</option>
 								<option <?php if($selected_mode == 'mode3') {echo 'selected';} ?> value="mode3">Neteller</option>
 								<option <?php if($selected_mode == 'mode4') {echo 'selected';} ?> value="mode4">Paypal</option>
 								<option <?php if($selected_mode == 'mode5') {echo 'selected';} ?> value="mode5">Mastercard</option>
