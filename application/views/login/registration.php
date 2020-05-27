@@ -31,6 +31,9 @@
               </div>
             </div>
 
+            <div class="hide" <?php if(isset($_SESSION['success'])){
+              echo 'style="display: none;"';
+             }?>>
             <?php echo form_open('registration'); ?>
 
             <div class="form-group">
@@ -394,6 +397,7 @@
               </button>
             </div>
             </form>
+           </div>
         </div>
       </div>
     </div>
